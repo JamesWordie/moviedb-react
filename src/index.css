@@ -1,1 +1,27 @@
-index.css
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.description {
+  max-height:  100px;
+  overflow-y: overlay;
+  text-overflow: ellipsis;
+}
+
+.ui.card:first-child {
+  margin-top: 1em !important;
+}
+
+.ui.card:last-child {
+  margin-bottom: 1em !important;
+}
+
+.movie-list img {
+  height: 375px !important;
+}
+
+.ui.card {
+  margin: 1em auto;
+}
