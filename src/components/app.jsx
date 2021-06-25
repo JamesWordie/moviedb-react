@@ -9,7 +9,7 @@ class App extends React.Component {
   handleSubmit = async (term) => {
     const response = await moviedb.get('/search/movie', {
       params: {
-        api_key: 'b297b6c0f7debecdc9160656baef7066',
+        api_key: process.env.REACT_APP_API_KEY,
         query: term
       }
     });

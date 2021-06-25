@@ -2,13 +2,6 @@ import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 
 class MovieCard extends React.Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = { movies: [] };
-
-  // }
-
   render() {
     const { title, overview, vote_average, poster_path } = this.props.movie;
     const imageUrl = `https://image.tmdb.org/t/p/w200${poster_path}`;
