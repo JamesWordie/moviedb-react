@@ -1,4 +1,5 @@
 import React from 'react';
+import StarRatingComponent from 'react-star-rating-component';
 
 class MovieCard extends React.Component {
   // constructor(props) {
@@ -27,7 +28,12 @@ class MovieCard extends React.Component {
           </div>
         </div>
         <div className="extra content">
-          {vote_average}/10
+          <StarRatingComponent
+            editing={false}
+            renderStarIcon={() => <span><i class="star icon"></i></span>}
+            starCount={5}
+            value={Math.ceil(vote_average/2)}
+          />
         </div>
       </div>
     )
